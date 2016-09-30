@@ -1,0 +1,143 @@
+.box-body {
+  width: 100%;
+  background: white;
+}
+
+.form-group {
+  padding: 10px 10px 10px 10px;
+}
+
+option {
+  color: black;
+}
+
+/* textarea:focus, input:focus {
+    color: black;
+}
+input, select, textarea{
+    color: black;
+} */
+.error {
+  color: white;
+}
+textarea.error{
+  color:black;
+}
+input.error{
+  color:red;
+}
+.list #student .error-wrap {
+  padding: 10px 0;
+}
+
+.errorContainer {
+  padding-left: 4%;
+  overflow: auto;
+  background-color: orangered;
+  padding-top: 0px;
+  transition: 0.4s all ease-in;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid red;
+  display: none;
+}
+
+.errorContainer p {
+  margin-top: 10px;
+  margin-left: 2%;
+  color: white;
+}
+
+.errorContainer ul {
+  list-style-type: square;
+  color: white;
+  text-align:left;
+}
+
+.errorContainer label {
+  margin-top: 5px;
+  float: none;
+  width: auto;
+}
+
+.date {
+  color: black;
+}
+
+.number {
+  color: black;
+}
+
+.modal-header {
+  width: 100%;
+  height: 46px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: initial;
+  background-color: white;
+}
+
+.col-md-offset-1 {
+  margin-left: 0%;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    float: left;
+}
+.open1 {
+  display: block !important;
+  -webkit-animation: fadeIn .8s forwards;
+  animation: fadeIn .8s forwards;
+}
+
+.close1 {
+  display: none !important;
+  -webkit-animation: fadeOut .8s forwards;
+  animation: fadeOut .8s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.form-horizontal .form-group {
+  margin-left: 25px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.form-control:focus {
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+.modal-header {
+  background: #cec6c6;
+}
+.btn-primary{
+  background-color: green;
+}
+.btn-lg {
+  border-radius: 30px;
+}

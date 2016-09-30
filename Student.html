@@ -1,0 +1,328 @@
+<section>
+	<div class="student1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="content-header">
+	  <div class="list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<h2>List of Students</h2>
+		<button class="right btn btn-primary btn-md" type="button" data-toggle='modal' data-target='#Student'>Add New Student</button>
+		<!-- modal -->
+		<div id="Student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+			  <div role="document" class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+			        <h4 id="myModalLabel" class="modal-title">Add New Student</h4>
+			      </div>
+			      <div class="error-wrap">
+			        <div class="errorContainer">
+			          <p>Please correct the following error and try again.</p>
+			          <ul>   </ul>
+			        </div>
+			      </div>
+			      <div class="create-form">
+			        <form action="http://www.google.com" name="student" enctype="multipart/form-data" id="studentform" class="form-horizontal">
+			          <div class="box-body">
+			            <div class="col-md-4 col-md-offset-1">
+			              <div class="form-group">
+			                <div class="form-group">
+			                  <label for="roll_no">Roll Number</label>
+			                  <input id="roll_no" type="number" placeholder="Enter Roll Number" name="roll_no" min="1" class="form-control number"/>
+			                </div>
+			                <div class="form-group">
+			                  <label for="name">Name</label>
+			                  <input id="name" type="text" placeholder="Enter name" name="name" class="form-control studentname"/>
+			                </div>
+			                <div class="form-group">
+			                  <label for="class">Class</label>
+			                  <select name="classselect" id="classselect" class="form-control">
+			                    <option value="" selected="selected">Select Class</option>
+			                    <option value="1">One</option>
+			                    <option value="4">Two</option>
+			                    <option value="6">Three</option>
+			                    <option value="9">Four</option>
+			                    <option value="12">Five</option>
+			                    <option value="13">Six</option>
+			                    <option value="14">Seven</option>
+			                    <option value="15">Eight</option>
+			                    <option value="16">Nine</option>
+			                    <option value="17">Ten</option>
+			                    <option value="18">Ten</option>
+			                  </select>
+			                </div>
+			                <div class="form-group">
+			                  <label for="section">Section</label>
+			                  <select name="section" class="form-control">
+			                    <option value="" selected="selected">Select Section</option>
+			                    <option value="A">A</option>
+			                    <option value="B">B</option>
+			                  </select>
+			                </div>
+			                <div class="form-group">
+			                  <label for="name">Address</label>
+			                  <input id="address" type="text" placeholder="Enter Address" name="address" class="form-control"/>
+			                </div>
+			              </div>
+			            </div>
+			            <div class="col-md-4 col-md-offset-2">
+			              <div class="form-group">
+			                <label for="name">Email</label>
+			                <input id="email" type="email" placeholder="Enter Email" name="email" class="form-control"/>
+			              </div>
+			              <div class="form-group">
+			                <label for="name">Parents Name</label>
+			                <input id="parents_name" type="text" placeholder="Enter Parents Name" name="parents_name" class="form-control"/>
+			              </div>
+			              <div class="form-group">
+			                <label for="name">Parents Phone</label>
+			                <input id="parents_Phone" type="text" placeholder="Enter Parents Phone" name="parents_phone" class="form-control parentname"/>
+			              </div>
+			              <div class="form-group">
+			                <label for="name">Students Phone</label>
+			                <input id="student_phone" type="text" placeholder="Enter Students Phone" name="student_phone" class="form-control"/>
+			              </div>
+			              <div class="form-group">
+			                <label for="image">Student's Photo</label>
+			                <input type="file" name="image" accept="image/*"/>
+			              </div>
+			            </div>
+			            <div class="clearfix"></div>
+			            <div class="modal-footer">
+			              <div class="col-md-4 col-md-offset-6">
+			                <button type="submit" value="submit" class="btn btn-primary btn-info submit">Add Student</button>
+			              </div>
+			            </div>
+			          </div>
+			        </form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  </div>
+	</div>
+	<div class="box-body">
+		<div class="head col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			<label><a href=""><p>Print Now</p>  &nbsp<i class="fa fa-print fa-2x" aria-hidden="true" alt="print"></i></a>
+				
+			</label>
+		</div>
+		<div class="head col-lg-10 col-md-10 col-sm-10 col-xs-10">
+
+			<div class="form-group pull-right">
+			    <input type="text" id="search" placeholder="Type to search">
+			</div>
+
+			<select class="right btn btn-mini">
+				<option value="" selected="selected">Select Section</option>
+				<option value="A">Section A</option>
+				<option value="B">Section B</option>
+			</select>
+
+ 			<select class="right btn btn-mini">
+  				<option value="" selected="selected">Select Class</option>
+                <option value="A">Class 10</option>
+                <option value="B">Class 9</option>
+                <option value="C">Class 8</option>
+                <option value="D">Class 7</option>
+                <option value="E">Class 6</option>
+                <option value="F">Class 5</option>
+                <option value="G">Class 4</option>
+                <option value="H">Class 3</option>
+                <option value="I">Class 2</option>
+                <option value="J">Class 1</option>
+			</select>
+		</div>
+		<div class="student-table col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="table-responsive">
+		  <table id="table" class="table">
+		  <thead>
+			      <tr>
+			        <th >S.N</th>
+			        <th >Name</th>
+			        <th >Class</th>
+			        <th >Section</th>
+			        <th >Roll No.</th>
+			        <th >Photo</th>
+			        <th >Options</th>
+			        </tr>
+    
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <th scope="row">1</th>
+			        <td>
+			        <a href="" data-toggle='modal' data-target='#Profile'>Anna</a>
+			        </td>
+			        <td>One</td>
+			        <td>A</td>
+			        <td>1</td>       
+			        <td>
+			        	<img class="responsiveimage" src="images/1.jpg">
+			        </td>
+			        <td>
+			        	<a href="" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
+			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <tbody>
+			      <tr>
+			        <th scope="row">2</th>
+			        <td><a href="" data-toggle='modal' data-target='#Profile'>Alice</a></td>
+			        <td>One</td>
+			        <td>A</td>
+			        <td>2</td>       
+			        <td>
+			        	<img class="responsiveimage" src="images/1.jpg">
+			        </td>
+			        <td>
+			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
+			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <tbody>
+			      <tr>
+			        <th scope="row">3</th>
+			        <td><a href="" data-toggle='modal' data-target='#Profile'>Becky</a></td>
+			        <td>One</td>
+			        <td>A</td>
+			        <td>3</td>       
+			        <td>
+			        	<img class="responsiveimage" src="images/1.jpg">
+			        </td>
+			        <td>
+			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
+			        	<a href="" data-toggle='modal' data-target='#Profile' ><i class="fa fa-times" aria-hidden="true"></i></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <tbody>
+			      <tr>
+			        <th scope="row">4</th>
+			        <td><a href="" data-toggle='modal' data-target='#Profile' >Aldrich</a></td>
+			        <td>One</td>
+			        <td>A</td>
+			        <td>4</td>       
+			        <td>
+			        	<img class="responsiveimage" src="images/1.jpg">
+			        </td>
+			        <td>
+			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
+			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <tbody>
+			      <tr>
+			        <th scope="row">5</th>
+			        <td><a href="" data-toggle='modal' data-target='#Profile'>Sophie</a></td>
+			        <td>One</td>
+			        <td>A </td>
+			        <td>5</td>       
+			        <td>
+			        	<img class="responsiveimage" src="images/1.jpg">
+			        </td>
+			        <td>
+			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
+			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <!-- Student profile modal box -->
+			    <div id="Profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+			  <div role="document" class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+			        <h4 id="myModalLabel" class="modal-title">Student Details</h4>
+			      </div>
+			      <div class="create-form">
+			        <form action="http://www.google.com" name="student" enctype="multipart/form-data" id="studentform" class="form-horizontal">
+			          <div class="box-body">
+			            <div class="col-md-4 col-md-offset-1">
+			              <div class="form-group">
+			                <div class="form-group">
+			                	<p>
+			                		<label for="roll_no">Roll Number :-</label>
+			                  		<span>1</span>
+			                	</p>
+		                	</div>
+			                <div class="form-group">
+			                	<p>
+			                		<label for="name">Name :-</label>
+			                  		<span>Alice</span>
+			                	</p>
+			                </div>
+			                <div class="form-group">
+			                	<p>
+			                		<label for="class">Class :-</label>
+			                  		<span>One</span>
+			                	</p>
+		                	</div>
+			                <div class="form-group">
+			                	<p>
+			                		<label for="section">Section :-</label>
+			                  		<span>A</span>
+			                	</p>
+		                	</div>
+			                <div class="form-group">
+			                	<p>
+			                		<label for="name">Address :-</label>
+			                  		<span>Tokha,Ktm</span>
+			                	</p>
+		                	</div>
+			              </div>
+			            </div>
+			            <div class="col-md-4 col-md-offset-2">
+			                <div class="form-group">
+				              	<p>
+				              		<label for="name">Email :-</label>
+				                	<span>Alice@gmail.com</span>
+				              	</p>
+				            </div>
+			                <div class="form-group">
+				              	<p>
+				              		<label for="name">Parents Name :-</label>
+				                	<span>Tracey</span>
+				              	</p>
+			              	</div>
+			                <div class="form-group">
+				              	<p>
+				              		<label for="name">Parents Phone :-</label>
+				                	<span>9850223123</span>
+				              	</p>
+							</div>
+							<div class="form-group">
+								<p>
+									<label for="name">Students Phone :-</label>
+									<span>9850223123</span>
+								</p>
+							</div>
+			                <div class="form-group">
+			                	<p>
+			                		<label for="image">Student's Photo :-</label>
+			                		<span><img src="" alt="Student photo" height="100px" width="100px"></span>
+			                	</p>
+		                	</div>
+			            </div>
+			            
+			          </div>
+			        </form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+</table>
+		  </div>
+		</div>
+			
+	</div>
+	
+		
+	</div>
+	
+	
+</section>
+<script src="js/Validation.js"></script>
+<script type="text/javascript">
+
+</script>

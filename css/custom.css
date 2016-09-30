@@ -1,0 +1,206 @@
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #ecf0f5;
+}
+.skin-blue .main-header .navbar {
+    background-color: #00853e;
+}
+
+.skin-blue .main-header .logo{
+	background-color: white;
+	color: #080808;
+}
+.skin-blue .main-header .logo:hover{
+	background-color: white;
+}
+/* sidebar color */
+
+.skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: white;
+}
+
+.skin-blue .sidebar a {
+    color: black;
+}
+
+/* activesidebar */
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
+    color: black;
+    background: white;
+    border-left-color: #3c8dbc;
+}
+
+/* sidebar image icons */
+.sidebar ul li a img{
+	height:15px;
+	width:15px;
+}
+
+/* counter image */
+.row{
+	margin-top:-13px;
+	margin-left:-30px;
+}
+.info-box-icon{
+	background-color: white;
+}
+.info-box-icon>img {
+    max-width: 100%;
+    height:50px;
+    width:50px;
+}
+/* info box text */
+.info-box-text {
+    display: block;
+    font-size: 11px;
+    white-space: nowrap;
+    margin-left: -15px;
+}
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 16px;
+    color: green;
+    margin-left: -15px;
+}
+
+@media (min-width: 992px){
+.content .row .col-md-2 {
+    width: 225px;
+}
+}
+.content-wrapper{
+    height:100px;
+}
+/* header logo */
+.main-header a .logo{
+	height:100px;
+}
+@media screen and (max-width:793px){
+  .row .col-xs-12{
+    display:none;
+  }
+}
+/* DashBoard */
+#content{
+  height:auto;
+  width:auto;
+}
+.content-body .student .SAS{
+    min-height:320px;
+    padding-top: 15px;
+    background-color: white;
+}
+
+.canvas{
+  height:80%;
+  width:100%;
+}
+.content-body .student .Nboard{
+    min-height:360px;
+    height:auto;
+    padding-top: 15px;      
+    background-color: white;
+    margin-left: 10px;
+}
+
+
+.content-body .student .routines{
+    min-height:200px;
+    height:auto;
+    padding-top: 15px;
+    background-color: white;
+    margin-top: 0px;
+}
+.content-body .student .c-events{
+    min-height:180px;
+    height:auto;
+    padding-top: 15px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+@media screen and (max-width:991px){
+  .content-body .student .Nboard{
+    margin-left: 0px;
+    margin-top: 10px;
+
+}
+.content-body .student .routines{
+   margin-top: 10px;
+}
+.content-body .student .c-events{
+    margin-left: 0px;
+    margin-top: 10px;
+
+}
+}
+.content-body .student span{
+    font-weight: 700;
+}
+
+.content-body .student .btn{
+        padding: 0px 12px;
+        font-size: 12px;
+        float:right;
+}
+/* table header */
+.routines .table.routine>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    background-color: skyblue;
+}
+/* // Dashboard chart */
+#myChart{
+  height:300px;
+  width:100%;
+}
+
+/* Student */
+
+.content-header{
+  text-align: center;
+}
+.content-header h2{
+  display:inline;
+}
+.content-header .list{
+  margin-top:10px;
+}
+.content-header .right{
+  float:right;
+}
+.box-body{
+ background-color: white;
+ height: auto;
+ padding-top: 10px;
+}
+
+label.right{
+  float:right;
+}
+select.right{
+  float:right;
+}
+.box-body .student-table{
+  margin-bottom: 10px;
+}
+.box-body .table-responsive{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.box-body .table-responsive .table tbody tr td img {
+  width: 60px;
+  height:60px;
+}
+.box-body .head{
+  margin-top: 10px;
+}
+.box-body .head p{
+    margin: 0 0 10px;
+    display: inline;
+    font-size: 18px;
+    
+}
+/* Table */
+.table{
+  text-align: left;
+}
