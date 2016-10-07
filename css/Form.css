@@ -75,7 +75,7 @@ input.error{
   padding-left: 10px;
   padding-top: 10px;
   margin-bottom: initial;
-  background-color: white;
+  background-color: #00853e;
 }
 
 .col-md-offset-1 {
@@ -85,7 +85,8 @@ label {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
-    font-weight: 700;
+    font-weight: 600;
+    margin-top: 9px;
     float: left;
 }
 .open1 {
@@ -132,9 +133,7 @@ label {
   box-shadow: none;
 }
 
-.modal-header {
-  background: #cec6c6;
-}
+
 .btn-primary{
   background-color: green;
 }

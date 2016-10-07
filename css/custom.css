@@ -34,8 +34,35 @@
 	height:15px;
 	width:15px;
 }
+.skin-blue .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px;
+    background: #ffffff;
+}
+.skin-blue .treeview-menu>li>a {
+    color: black;
+}
+.skin-blue .treeview-menu>li.active>a, .skin-blue .treeview-menu>li>a:hover {
+    color: green;
 
+  
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: green;
+    border-color: #122b40;
+}
+.form-control {
+    border-radius: 8px;
+}
+.print{
+  border:1px solid grey;
+  border-right:1px solid grey;
+  border-radius: 8px;
+}
 /* counter image */
+.content {
+    min-height: auto;
+}
 .row{
 	margin-top:-13px;
 	margin-left:-30px;
@@ -81,6 +108,9 @@
     display:none;
   }
 }
+.modal-title {
+    color: white;
+}
 /* DashBoard */
 #content{
   height:auto;
@@ -97,29 +127,32 @@
   width:100%;
 }
 .content-body .student .Nboard{
-    min-height:360px;
+    min-height:334px;
     height:auto;
     padding-top: 15px;      
     background-color: white;
     margin-left: 10px;
+
 }
 
 
 .content-body .student .routines{
     min-height:200px;
     height:auto;
+    width:100%;
     padding-top: 15px;
     background-color: white;
-    margin-top: 0px;
+    margin-top: 15px;
 }
-.content-body .student .c-events{
-    min-height:180px;
-    height:auto;
-    padding-top: 15px;
-    background-color: white;
-    margin-left: 10px;
-    margin-top: 10px;
+
 }
+@media screen only and (min-width:990px){
+  .content-body .student .routines{
+    width:100%;
+  }
+
+}
+
 @media screen and (max-width:991px){
   .content-body .student .Nboard{
     margin-left: 0px;
@@ -129,11 +162,7 @@
 .content-body .student .routines{
    margin-top: 10px;
 }
-.content-body .student .c-events{
-    margin-left: 0px;
-    margin-top: 10px;
 
-}
 }
 .content-body .student span{
     font-weight: 700;
@@ -146,16 +175,70 @@
 }
 /* table header */
 .routines .table.routine>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
-    background-color: skyblue;
+    background-color: #00853e;
+    color: white;
+}
+/*table*/
+.table-responsive {
+    margin-top: 15px;
 }
 /* // Dashboard chart */
+@media (min-width: 1200px){
+  .col-lg-7 {
+    width: 65.333333%;
+}
+}
+
 #myChart{
   height:300px;
   width:100%;
 }
 
+/* Calendar */
+.schoolcalendar.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: green 1px solid;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.schoolcalendar.btn img{
+  height:30px;
+  width:30px;
+  margin-left: -3px;
+  color:white;
+}
+.Calendar{
+  height:300px;
+}
 /* Student */
-
+.row .sectionheader{
+  width:100%;
+  margin-left: 30px;
+  padding: 22px;
+  margin-top: 25px;
+  background-color: white;
+}
+.row .sectionheader img{
+  display:inline;
+  height:55px;
+  width: 55px;
+}
+.row .sectionheader h2{
+  display: inline;
+  margin-left: 10px;
+  color: #00853e;
+  font-weight: 600;
+}
+.row .sectionheader .right{
+  float:right;
+  margin-top: 5px;
+}
 .content-header{
   text-align: center;
 }
@@ -165,17 +248,19 @@
 .content-header .list{
   margin-top:10px;
 }
-.content-header .right{
-  float:right;
-}
+
 .box-body{
  background-color: white;
  height: auto;
  padding-top: 10px;
 }
+.box{
+  border-top: none;
+}
 
 label.right{
   float:right;
+ 
 }
 select.right{
   float:right;
@@ -191,16 +276,226 @@ select.right{
   width: 60px;
   height:60px;
 }
+.box-body .table-responsive .table>tbody:nth-child(even){
+  background: #f0f0f0;
+}
+
 .box-body .head{
   margin-top: 10px;
+  display: inline;
 }
 .box-body .head p{
     margin: 0 0 10px;
-    display: inline;
     font-size: 18px;
+    padding: 3px;
     
+}
+.opt{
+  color:black;
+  font-size: 12px;  
+}
+
+.studentinfo{
+  float: left;
+  margin-top: 10px;
+}
+.edit{
+  display: inline;
+}
+/* button outline */
+.btn {
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px;
 }
 /* Table */
 .table{
   text-align: left;
+  border-collapse: inherit; 
+}
+.routines .table-responsive .table>thead>tr>th{
+  background: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+.routines .table-responsive .table>tbody>tr>td>img{
+  height:20px;
+  width:20px;
+  border:1px solid blue;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.routines .table>thead>tr>th{
+  margin-bottom: transparent;
+}
+.routines .table-responsive .table>tbody{
+  border-color: none;
+}
+.routines .table-responsive .table>tbody>tr>td:nth-child(2){
+  border-left:#d9e4de 1px solid;
+}
+.routines .table-responsive .table>tbody>tr>td:last-child{
+  border-right:#d9e4de 1px solid;
+}
+.routines .table-responsive .table>tbody:first-child{
+  border-top: #d9e4de 1px solid;
+}
+.routines .table-responsive .table>tbody:last-child{
+  border-bottom: #d9e4de 1px solid;
+}
+
+.routines .table-responsive .table>tbody>tr>td{
+  position: relative;
+  border-right: 1px solid #fff;
+}
+.routines .table-responsive .table>tbody:nth-child(even){
+  background: #f0f0f0;
+}
+.routines .table-responsive .table>tbody>tr>td:hover>span{
+  top: -25px;
+  opacity: 1;
+}
+.routines .table-responsive .table>tbody>tr>th{
+  background: #fff;
+}
+.routines .table-responsive .table>tbody>tr>td>span{
+    position: absolute;
+    padding: 4px;
+    background: #000;
+    top: 25px;
+    left: 2px;
+    opacity: 0;
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
+.routines .table-responsive .table>tbody>tr>td>span::after{
+  content: '';
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+  bottom: -5px;
+  left: 10px;
+
+}
+/* tabs */
+.main {
+  margin: 0 auto; 
+  min-width: 320px; 
+  max-width: 800px;
+}
+
+.tabcontent {
+background: #fff; 
+color: #373737;
+clear:both;
+}
+@media screen and (max-width: 382px){
+ .tabcontent {
+width:90%;
+} 
+}
+.tabcontent > div {
+  display: none; 
+padding: 20px 25px 5px;}
+
+.main input {
+display: none;
+}
+
+.main label {
+display: inline-block;
+padding: 10px 15px; 
+font-weight: 600; 
+text-align: center;
+float: left;
+}
+
+.main label:hover {
+color: black;
+cursor: pointer;}
+
+.main input:checked + label {
+background: green; 
+color: #fff;
+border-radius: 4px;
+}
+
+#tab1:checked ~ .tabcontent #content1,
+#tab2:checked ~ .tabcontent #content2,
+#tab3:checked ~ .tabcontent #content3,
+#tab4:checked ~ .tabcontent #content4,
+#tab5:checked ~ .tabcontent #content5,
+#tab6:checked ~ .tabcontent #content6,
+#tab7:checked ~ .tabcontent #content7,
+#tab8:checked ~ .tabcontent #content8,
+#tab9:checked ~ .tabcontent #content9,
+#tab10:checked ~ .tabcontent #content10 {
+display: block;
+}
+.main .tabcontent .stylelist ul{
+margin-top: 0;
+margin-bottom: 10px;
+margin-left: -10%;
+list-style: square;
+}
+
+.main .tabcontent .stylelist ul li{
+  white-space: normal;
+  border-bottom: 2px solid grey;
+}
+.main .tabcontent .nostyle ul{
+  list-style: none;
+}
+.main .tabcontent .nostyle ul li{
+  border-bottom: none;
+}
+@media screen and (max-width: 400px) {
+label {
+padding: 15px 10px;}
+}
+
+input{
+  border-width:1px;
+  border-radius: 5px;
+}
+input:focus{
+  outline:none;
+}
+
+body{
+  background-color: #f0f0f0;
+}
+
+.box {
+    margin-left: -28px;
+}
+.sms{
+  margin-left: 0px;
+}
+.box.box-primary {
+    border-top-color: #199411;
+}
+.box.box-danger {
+    border-top-color: none;
+    width: 109%;
+}
+.setting{
+background-color: white;
+width: 97.4%;
+margin-left: 15px;
+margin-top: 16px;
+padding-bottom: 15px;
+}
+
+.library{
+  height: auto;
+  background-color: white;
+  margin-top: 10px;
+}
+.positionbox{
+  margin-top: 22px;
+  border:none;
 }
