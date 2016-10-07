@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Calendar -->
+  <link rel="stylesheet" type="text/css" href="css/monthly.css">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -63,31 +64,41 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="active treeview">
+        <li class="active">
           <a href="dashboard.html" data-target="Dashboard">
             <img src="images/icons/lockers.svg"></img> <span>Dashboard</span>
           </a>
         </li>
         <li class="treeview">
        <!-- Student -->
-          <a href="Student.html" data-target="students">
+          <a href="#" >
              <img src="images/icons/theater.svg"></img>
             <span>Students</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-left"></i>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li ><a href="blank" data-toggle='modal' data-target='#Student'>Admit Student</a></li>
+            <li><a href="Classes.html">Student Information</a>
+            </li>
+          </ul>
         </li>
-        <li>
-          <a href="Class.html" data-target="Classes">
+        <li class="treeview">
+          <a href="" >
             <img src="images/icons/backpack.svg"></img> <span>Classes</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
             </span>
           </a>
+          <ul class="treeview-menu">
+            <li><a href="Class.html">Classes</a></li>
+            <li><a href="section.html">Manage Section</a>
+            </li>
+          </ul>
         </li>
-        <li class="treeview">
-          <a href="#" data-target="Teachers">
+        <li class="">
+          <a href="teacher.html" data-target="Teachers">
             <img src="images/icons/tie.svg"></img>
             <span>Teachers</span>
             <span class="pull-right-container">
@@ -95,7 +106,7 @@
             </span>
           </a>
         </li>
-        <li class="treeview">
+        <li class="">
           <a href="Subject.html" data-target="Subject">
             <img src="images/icons/lockers.svg"></img>
             <span>Subject</span>
@@ -105,7 +116,7 @@
           </a>
          
         </li>
-        <li class="treeview">
+        <li class="">
           <a href="Exams.html" data-target="Exams">
             <img src="images/icons/exam.svg"></img> <span>Exams</span>
             <span class="pull-right-container">
@@ -122,12 +133,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"> Place Attendance</a></li>
-            <li><a href="#">View Attendance</a></li>
+            <li><a href="ManageAttendance.html">Place Attendance</a></li>
+            <li><a href="attendancereport.html">View Attendance</a></li>
           </ul>
         </li>
         <li>
-          <a href="#" data-target="Events">
+          <a href="Event.html" data-target="Events">
             <img src="images/icons/calendar.svg"></img>  <span>Events</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
@@ -135,7 +146,7 @@
           </a>
         </li>
         <li>
-          <a href="#" data-target="Noticeboard">
+          <a href="noticeboard.html" data-target="Noticeboard">
             <img src="images/icons/blackboard.svg"></img>  <span>Noticeboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-right pull-right"></i>
@@ -148,46 +159,22 @@
             <span>Sms</span>          
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"> Send New Messages</a></li>
-            <li><a href="#"> View Messages</a></li>
+            <li><a href="sendsms.html"> Send New Messages</a></li>
+            <li><a href="viewmsg.html"> View Messages</a></li>
           </ul>
         </li>
-        <li class="treeview">
-          <a href="#" data-target="Library">
+        <li class="">
+          <a href="library.html" data-target="Library">
             <img src="images/icons/books.svg"></img>  <span>Library</span>    
           </a>
-          <!-- <ul class="treeview-menu">
-            <li>
-            <a href="#"> Level One</a></li>
-            <li>
-              <a href="#">Level One
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                    <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                  </a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#"> Level One</a></li>
-          </ul> -->
+          
         </li>
-        <li><a href="#" data-target="Settings"><img src="images/icons/settings.svg"></img>  <span>Settings</span></a>
-        <ul class="treeview-menu">
-            <li><a href="#"> Main Settings</a></li>
-            <li><a href="#"> Change Password</a></li>
-          </ul></li>
+        <li class="treeview"><a href="#" data-target="Settings"><img src="images/icons/settings.svg"></img>  <span>Settings</span></a>
+          <ul class="treeview-menu">
+            <li><a href="mainsetting.html"> Main Settings</a></li>
+            <li><a href="Changepassword.html"> Change Password</a></li>
+          </ul>
+        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -195,86 +182,7 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-
-    <!-- Main content -->
-    <section class="content">
-      <!-- Info boxes -->
-      <div class="row">
-        <div class="col-md-2 col-sm-4 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon"><img src="images/icons/theater.svg"></img> </span>
-
-            <div class="info-box-content">
-              <span class="info-box-number">1167</span>
-              <span class="info-box-text">Total students </span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-
-        <!-- /.col -->
-        <div class="col-md-2 col-sm-4 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon"><img src="images/icons/tie.svg"></img></span>
-
-            <div class="info-box-content">
-              <span class="info-box-number">114</span>
-              <span class="info-box-text">Total Teachers
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-        <!-- fix for small devices only -->
-        <div class="clearfix visible-sm-block"></div>
-
-        <div class="col-md-2 col-sm-4 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon"><img src="images/icons/calendar.svg"></img></span>
-
-            <div class="info-box-content">
-              <span class="info-box-number">08</span>
-              <span class="info-box-text">Events
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-2 col-sm-4 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon"><img src="images/icons/books.svg"></img></span>
-
-            <div class="info-box-content">
-              <span class="info-box-number">17824</span>
-              <span class="info-box-text">Books in library
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-2 col-sm-4 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon"><img src="images/icons/chat.svg"></img></span>
-
-            <div class="info-box-content">
-              <span class="info-box-number">436782</span>
-              <span class="info-box-text">Total Sms Sent
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-      </div>
-      <!-- /.row -->
-      
+    
     <div id="content" class="content-body">
     <!-- Dashboard section -->
       
@@ -282,6 +190,106 @@
 </div> 
 </div>   
 </div>  
+
+
+<!-- Add student modal -->
+<div class="content-header">
+      <div class="list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        
+    <!-- modal -->
+        <div id="Student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+           <div role="document" class="modal-dialog modal-md">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+                    <h4 id="myModalLabel" class="modal-title">Add New Student</h4>
+                  </div>
+              <div class="error-wrap">
+                <div class="errorContainer">
+                        <p>Please correct the following error and try again.</p>
+                        <ul>   </ul>
+                    </div>
+                  </div>
+          <div class="create-form">
+                <form action="http://www.google.com" name="student" enctype="multipart/form-data" id="studentform" class="form-horizontal">
+                    <div class="box-body">
+                      <div class="col-md-6 ">
+                          <div class="form-group">
+                            <div class="form-group">
+                              <label for="roll_no">Roll Number</label>
+                              <input id="roll_no" type="number" placeholder="Enter Roll Number" name="roll_no" min="1" class="form-control number"/>
+                            </div>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Enter name" name="name" class="form-control studentname"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="class">Class</label>
+                        <select name="classselect" id="classselect" class="form-control">
+                          <option value="" selected="selected">Select Class</option>
+                          <option value="1">One</option>
+                          <option value="4">Two</option>
+                          <option value="6">Three</option>
+                          <option value="9">Four</option>
+                          <option value="12">Five</option>
+                          <option value="13">Six</option>
+                          <option value="14">Seven</option>
+                          <option value="15">Eight</option>
+                          <option value="16">Nine</option>
+                          <option value="17">Ten</option>
+                          <option value="18">Ten</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="section">Section</label>
+                        <select name="section" class="form-control">
+                          <option value="" selected="selected">Select Section</option>
+                          <option value="A">A</option>
+                          <option value="B">B</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Address</label>
+                        <input id="address" type="text" placeholder="Enter Address" name="address" class="form-control"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="form-group">
+                      <label for="name">Email</label>
+                      <input id="email" type="email" placeholder="Enter Email" name="email" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Parents Name</label>
+                      <input id="parents_name" type="text" placeholder="Enter Parents Name" name="parents_name" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Parents Phone</label>
+                      <input id="parents_Phone" type="text" placeholder="Enter Parents Phone" name="parents_phone" class="form-control parentname"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Students Phone</label>
+                      <input id="student_phone" type="text" placeholder="Enter Students Phone" name="student_phone" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                      <label for="image">Student's Photo</label>
+                      <input type="file" name="image" accept="image/*"/>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="modal-footer">
+                    <div class="col-md-4 col-md-offset-6">
+                      <button type="submit" value="submit" class="btn btn-primary btn-info submit">Add Student</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div
 <!-- end of Dashboard section -->
 <!-- ./wrapper -->
 
@@ -301,6 +309,7 @@
 <script src="js/jquery-ui.min.js"></script>
 <!-- Form validation -->
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<script src="js/Validation.js"></script>
 <!-- custom js-->
 <script src="js/custom.js"></script>
 </body>

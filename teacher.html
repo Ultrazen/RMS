@@ -1,21 +1,23 @@
 <section>
 	<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
     	<div class="sectionheader ">
-    		<img src="images/icons/backpack.svg" >
-    		<h2>Available Classes</h2>
-    		<button type="button" data-toggle="modal" data-target="#Class" class="right btn btn-primary btn-md"><i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp  Add New Class</button>
+    		<img src="images/icons/tie.svg" >
+    		<h2>Manage Teachers</h2>
+    		<button type="button" data-toggle="modal" data-target="#Teacher" class="right btn btn-primary btn-md">
+			<i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp Add New Teacher</button>
     	</div>
     </div>
-	<div class="Class col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Class col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="content-header">
 	    <div class="list col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<div id="Class" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+        <!-- Modal -->
+		<div id="Teacher" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
   <div role="document" class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
         <h4 id="myModalLabel" class="modal-title">
-        Add New Class</h4>
+        Add New Teacher</h4>
       </div>
       <div class="error-wrap">
         <div class="errorContainer">
@@ -24,22 +26,63 @@
         </div>
       </div>
       <div class="create-form">
-        <form action="https://www.google.com.np/?gws_rd=cr&amp;ei=SLffV_qBHcao0gT4-rq4Cw" name="classmngment" id="classmngment" class="form-horizontal">
+        <form action="https://www.google.com.np/?gws_rd=cr&amp;ei=SLffV_qBHcao0gT4-rq4Cw" name="addteacher" id="addteacher" class="form-horizontal">
           <div class="box-body">
             <div class="form-group">
-              <label class="col-md-4">Class Name</label>
+              <label class="col-md-4">Name</label>
               <div class="col-md-6">
-                <input type="text" name="className" class="form-control className "/>
+                <input type="text" name="name" class="form-control  "/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Gender</label>
+              <div class="col-md-6">
+                <select  class="form-control" name="gender">
+                    <option value="" selected="selected">Select Section</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Address</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="address">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Phone</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="phone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Email</label>
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Password</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-4">Photo</label>
+              <div class="col-md-6">
+                <input type="file" name="image" accept="image/*"/>
               </div>
             </div>
             <div class="modal-footer">
               <div class="group product-save col-md-12">
-                <button type="submit" value="submit" class="btn btn-primary btn-info submit">Add Class</button>
+                <button type="submit" value="submit" class="btn btn-primary btn-info submit">Add Section</button>
               </div>
             </div>
           </div>
         </form>
-      </div>
+              </div>
+        </div>
     </div>
   </div>
 </div>
@@ -47,21 +90,45 @@
 		<!-- Table -->
 		<div class="box-body">
 		<div class="head col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+		<div class="head">
+
+			<div class="form-group pull-right">
+			    <input type="text" id="search" placeholder="Search"><i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+
+			<label class="right">
+			<p class="print">
+				<span ><a href="" class="right opt">Excel
+							</a></span>
+							|
+				<span ><a href="" class="right opt">PDF
+							</a></span>
+							|
+				<span ><a href="" class="right opt">Print
+							</a></span>
+			</p>
+			</label>
+		</div>
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
 			<div class="table-responsive">
-			  <table class="table">
+			  <table class="table" id="table">
 			    <thead>
 			      <tr>
 			        <th class="col-lg-1 col-md-1 col-sm-1 col-xs-1">S.n</th>
-			        <th>Class Name</th>
+			        <th>Name</th>
+			        <th>Email</th>
+			        <th>Photo</th>
 			        <th>Options</th>
 			      </tr>
 			    </thead>
 			    <tbody>
 			      <tr>
 			        <td>1</td>
-			        <td>One</td>  
+			        <td>Jasmine</td>
+			        <td>Jam@gmail.com</td>
+			        <td><img src="images/teach.png"></td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
@@ -91,7 +158,9 @@
 			    <tbody>
 			       <tr>
 			        <td>2</td>
-			        <td>Two</td>   
+			        <td>Jenna</td>
+			        <td>Jen@gmail.com</td>
+			        <td><img src="images/teach.png"></td>   
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
@@ -121,7 +190,9 @@
 			    <tbody>
 			       <tr>
 			        <td>3</td>
-			        <td>Three</td>   
+			        <td>Joseph</td>
+			        <td>Joph@gmail.com</td>
+			        <td><img src="images/teach.png"></td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
@@ -151,7 +222,9 @@
 			    <tbody>
 			       <tr>
 			        <td>4</td>
-			        <td>Four</td>   
+			        <td>Jacob</td>
+			        <td>Jakob@gmail.com</td>
+			        <td><img src="images/teach.png"></td>  
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
@@ -186,6 +259,5 @@
 
 	</div>
 	</div>
-	
 </section>
 <script src="js/Validation.js"></script>

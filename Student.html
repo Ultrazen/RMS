@@ -1,32 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Student Details</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Calendar -->
+  <link rel="stylesheet" type="text/css" href="css/monthly.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- form css -->
+  <link rel="stylesheet" href="css/Form.css">
+  <!-- jquery ui css -->
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
 <section>
+    <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<div class="sectionheader ">
+    		<img src="images/icons/theater.svg" >
+    		<h2>List of Students</h2>
+    		<button class="right btn btn-primary btn-md" type="button" data-toggle='modal' data-target='#Student'><i class="fa fa-plus-circle" aria-hidden="true"></i>
+				&nbsp Admit a Student</button>
+    	</div>
+    </div>
 	<div class="student1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	<div class="content-header">
-	  <div class="list col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		<h2>List of Students</h2>
-		<button class="right btn btn-primary btn-md" type="button" data-toggle='modal' data-target='#Student'>Add New Student</button>
+		<div class="content-header">
+			<div class="list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				
 		<!-- modal -->
-		<div id="Student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
-			  <div role="document" class="modal-dialog modal-lg">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-			        <h4 id="myModalLabel" class="modal-title">Add New Student</h4>
-			      </div>
-			      <div class="error-wrap">
-			        <div class="errorContainer">
-			          <p>Please correct the following error and try again.</p>
-			          <ul>   </ul>
-			        </div>
-			      </div>
-			      <div class="create-form">
-			        <form action="http://www.google.com" name="student" enctype="multipart/form-data" id="studentform" class="form-horizontal">
-			          <div class="box-body">
-			            <div class="col-md-4 col-md-offset-1">
-			              <div class="form-group">
-			                <div class="form-group">
-			                  <label for="roll_no">Roll Number</label>
-			                  <input id="roll_no" type="number" placeholder="Enter Roll Number" name="roll_no" min="1" class="form-control number"/>
-			                </div>
+				<div id="Student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+			 		 <div role="document" class="modal-dialog modal-md">
+			    		<div class="modal-content">
+			      			<div class="modal-header">
+			        			<button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+			        			<h4 id="myModalLabel" class="modal-title">Add New Student</h4>
+			      			</div>
+							<div class="error-wrap">
+								<div class="errorContainer">
+				          			<p>Please correct the following error and try again.</p>
+				          			<ul>   </ul>
+				        		</div>
+			      			</div>
+					<div class="create-form">
+			        	<form action="http://www.google.com" name="student" enctype="multipart/form-data" id="studentform" class="form-horizontal">
+			            	<div class="box-body">
+			            		<div class="col-md-6 ">
+			                		<div class="form-group">
+			                			<div class="form-group">
+						                  <label for="roll_no">Roll Number</label>
+						                  <input id="roll_no" type="number" placeholder="Enter Roll Number" name="roll_no" min="1" class="form-control number"/>
+			                			</div>
 			                <div class="form-group">
 			                  <label for="name">Name</label>
 			                  <input id="name" type="text" placeholder="Enter name" name="name" class="form-control studentname"/>
@@ -62,7 +105,7 @@
 			                </div>
 			              </div>
 			            </div>
-			            <div class="col-md-4 col-md-offset-2">
+			            <div class="col-md-6 ">
 			              <div class="form-group">
 			                <label for="name">Email</label>
 			                <input id="email" type="email" placeholder="Enter Email" name="email" class="form-control"/>
@@ -99,24 +142,14 @@
 	  </div>
 	</div>
 	<div class="box-body">
-		<div class="head col-lg-2 col-md-2 col-sm-2 col-xs-2">
-			<label><a href=""><p>Print Now</p>  &nbsp<i class="fa fa-print fa-2x" aria-hidden="true" alt="print"></i></a>
-				
-			</label>
-		</div>
-		<div class="head col-lg-10 col-md-10 col-sm-10 col-xs-10">
-
-			<div class="form-group pull-right">
-			    <input type="text" id="search" placeholder="Type to search">
-			</div>
-
-			<select class="right btn btn-mini">
+		<div class="head">
+		<select class="btn btn-mini">
 				<option value="" selected="selected">Select Section</option>
 				<option value="A">Section A</option>
 				<option value="B">Section B</option>
 			</select>
 
- 			<select class="right btn btn-mini">
+ 			<select class="btn btn-mini">
   				<option value="" selected="selected">Select Class</option>
                 <option value="A">Class 10</option>
                 <option value="B">Class 9</option>
@@ -129,6 +162,27 @@
                 <option value="I">Class 2</option>
                 <option value="J">Class 1</option>
 			</select>
+			
+				
+			</label>
+		</div>
+		<div class="head">
+
+			<div class="form-group pull-right">
+			    <input type="text" id="search" placeholder="Search"><i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+
+			<label class="right">
+			<p class="print">
+				<span ><a href="" class="right opt">Excel
+							</a></span>
+							|
+				<span ><a href="" class="right opt">PDF
+							</a></span>
+							|
+				<span ><a href="" class="right opt">Print
+							</a></span>
+			</p>
 		</div>
 		<div class="student-table col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="table-responsive">
@@ -158,8 +212,28 @@
 			        	<img class="responsiveimage" src="images/1.jpg">
 			        </td>
 			        <td>
-			        	<a href="" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
-			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                            	<span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
 			        </td>
 			      </tr>
 			    </tbody>
@@ -174,8 +248,28 @@
 			        	<img class="responsiveimage" src="images/1.jpg">
 			        </td>
 			        <td>
-			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
-			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                            	<span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
 			        </td>
 			      </tr>
 			    </tbody>
@@ -190,8 +284,28 @@
 			        	<img class="responsiveimage" src="images/1.jpg">
 			        </td>
 			        <td>
-			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
-			        	<a href="" data-toggle='modal' data-target='#Profile' ><i class="fa fa-times" aria-hidden="true"></i></a>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                            	<span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
 			        </td>
 			      </tr>
 			    </tbody>
@@ -206,8 +320,28 @@
 			        	<img class="responsiveimage" src="images/1.jpg">
 			        </td>
 			        <td>
-			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
-			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                            	<span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
 			        </td>
 			      </tr>
 			    </tbody>
@@ -222,8 +356,28 @@
 			        	<img class="responsiveimage" src="images/1.jpg">
 			        </td>
 			        <td>
-			        	<a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>|
-			        	<a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                            	<span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
 			        </td>
 			      </tr>
 			    </tbody>
@@ -243,31 +397,31 @@
 			                <div class="form-group">
 			                	<p>
 			                		<label for="roll_no">Roll Number :-</label>
-			                  		<span>1</span>
+			                  		<span class="studentinfo">1</span>
 			                	</p>
 		                	</div>
 			                <div class="form-group">
 			                	<p>
 			                		<label for="name">Name :-</label>
-			                  		<span>Alice</span>
+			                  		<span class="studentinfo">Alice</span>
 			                	</p>
 			                </div>
 			                <div class="form-group">
 			                	<p>
 			                		<label for="class">Class :-</label>
-			                  		<span>One</span>
+			                  		<span class="studentinfo">One</span>
 			                	</p>
 		                	</div>
 			                <div class="form-group">
 			                	<p>
 			                		<label for="section">Section :-</label>
-			                  		<span>A</span>
+			                  		<span class="studentinfo">A</span>
 			                	</p>
 		                	</div>
 			                <div class="form-group">
 			                	<p>
 			                		<label for="name">Address :-</label>
-			                  		<span>Tokha,Ktm</span>
+			                  		<span class="studentinfo">Tokha,Ktm</span>
 			                	</p>
 		                	</div>
 			              </div>
@@ -276,36 +430,43 @@
 			                <div class="form-group">
 				              	<p>
 				              		<label for="name">Email :-</label>
-				                	<span>Alice@gmail.com</span>
+				                	<span class="studentinfo">Alice@gmail.com</span>
 				              	</p>
 				            </div>
 			                <div class="form-group">
 				              	<p>
 				              		<label for="name">Parents Name :-</label>
-				                	<span>Tracey</span>
+				                	<span class="studentinfo">Tracey</span>
 				              	</p>
 			              	</div>
 			                <div class="form-group">
 				              	<p>
 				              		<label for="name">Parents Phone :-</label>
-				                	<span>9850223123</span>
+				                	<span class="studentinfo">9850223123</span>
 				              	</p>
 							</div>
 							<div class="form-group">
 								<p>
 									<label for="name">Students Phone :-</label>
-									<span>9850223123</span>
+									<span class="studentinfo">9850223123</span>
 								</p>
 							</div>
 			                <div class="form-group">
 			                	<p>
 			                		<label for="image">Student's Photo :-</label>
-			                		<span><img src="" alt="Student photo" height="100px" width="100px"></span>
+			                		<span class="studentinfo"><img src="" alt="Student photo" height="100px" width="100px"></span>
 			                	</p>
 		                	</div>
-			            </div>
+		                	<div class="clearfix"></div>
+					            <div class="modal-footer">
+					              	
+					                <button type="submit" value="submit" class="edit btn btn-primary btn-info submit">Edit</button>
+					                <button type="submit" value="submit" class="edit btn btn-primary btn-info submit">Ok</button>
+									
 			            
-			          </div>
+			           			</div>
+
+			           		</div>
 			        </form>
 			      </div>
 			    </div>
@@ -322,7 +483,23 @@
 	
 	
 </section>
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- ChartJS 1.0.1 -->
+<script src="plugins/chartjs/Chart.min.js"></script>
+<!-- jquery ui -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Form validation -->
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script src="js/Validation.js"></script>
-<script type="text/javascript">
-
-</script>
+<!-- custom js-->
+<script src="js/custom.js"></script>
+</body>
+</html>

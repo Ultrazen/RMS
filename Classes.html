@@ -1,90 +1,13 @@
-<section>
+<section id="classmain">
 	<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
     	<div class="sectionheader ">
-    		<img src="images/icons/lockers.svg" >
-    		<h2>Available Subjects</h2>
-    		<button type="button" data-toggle="modal" data-target="#Subject" class="right btn btn-primary btn-md">
-			<i class="fa fa-plus-circle" aria-hidden="true"></i> &nbsp Add Subject</button>
+    		<img src="images/icons/backpack.svg" >
+    		<h2>Class</h2>
     	</div>
     </div>
-	<div class="Subject col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="Class col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="content-header">
 	    <div class="list col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		
-		<div id="Subject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
-		  <div role="document" class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-		        <h4 id="myModalLabel" class="modal-title">Add Subject</h4>
-		      </div>
-		      <div class="error-wrap">
-		        <div class="errorContainer">
-		          <p>Please correct the following error and try again.</p>
-		          <ul> </ul>
-		        </div>
-		      </div>
-		      <div class="create-form">
-		        <form action="http://www.google.com" method="post" name="Addsubject" class="form-horizontal">
-		          <input type="hidden" name="_token" value="kL4CEGm45H1O5ntocZdrY391jFThRvrRKkzPxwTy"/>
-		          <div class="box-body col-md-offset-1">
-		            <div class="col-md-3">
-		              <div class="form-group">
-		                <label for="class">Class</label>
-		                <select name="subjectClass" class="form-control">
-		                  <option value="" selected="selected">Select Class</option>
-		                  <option value="1">One</option>
-		                  <option value="4">Two</option>
-		                  <option value="6">Three</option>
-		                  <option value="9">Four</option>
-		                  <option value="12">Five</option>
-		                  <option value="13">Six</option>
-		                  <option value="14">Seven</option>
-		                  <option value="15">Eight</option>
-		                  <option value="16">Nine</option>
-		                  <option value="17">Ten</option>
-		                  <option value="18">Ten</option>
-		                </select>
-		              </div>
-		            </div>
-		            <div class="col-md-3 col-md-offset-1">
-		              <div class="form-group">
-		                <label for="name">Subject</label>
-		                <input id="subject" type="text" placeholder="Enter Subject" name="subject" class="form-control"/>
-		              </div>
-		            </div>
-		            <div class="col-md-3 col-md-offset-1">
-		              <div class="form-group">
-		                <label for="name">Full Marks</label>
-		                <input id="full_mark" type="number" name="full_mark" min="1" class="form-control"/>
-		              </div>
-		            </div>
-		            <div class="clearfix"></div>
-		            <div class="col-md-3">
-		              <div class="form-group">
-		                <label for="name">Pass Marks</label>
-		                <input id="pass_mark" type="number" name="pass_mark" min="1" class="form-control"/>
-		              </div>
-		            </div>
-		            <div class="col-md-3 col-md-offset-1">
-		              <div class="form-group">
-		                <label for="author">Author</label>
-		                <input type="text" name="author" placeholder="Author" class="form-control"/>
-		              </div>
-		            </div>
-		            <div class="modal-footer">
-		              <div style="padding-top: 20px;" class="col-md-12 col-md-offset-1">
-		                <div class="form-group">
-		                  <button type="submit" value="submit" class="btn btn-primary btn-info submit">Add Subject</button>
-		                </div>
-		              </div>
-		            </div>
-		          </div>
-		        </form>
-		      </div>
-		    </div>
-		  </div>
-		</div>
 		</div>
 		<!-- Table -->
 		<div class="box-body">
@@ -96,26 +19,20 @@
 			    <thead>
 			      <tr>
 			        <th class="col-lg-1 col-md-1 col-sm-1 col-xs-1">S.n</th>
-			        <th>Class</th>
-			        <th>Subject</th>
-			        <th>Pass Mark</th>
-			        <th>Full Mark</th>
-			        <th>Author</th>
+			        <th>Class Name</th>
 			        <th>Options</th>
 			      </tr>
 			    </thead>
 			    <tbody>
 			      <tr>
-			      	<td>1</td>
-			        <td>One</td>
-			        <td>Maths</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Abin Rimal</td>
+			        <td>1</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">One</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -141,15 +58,13 @@
 			    <tbody>
 			       <tr>
 			        <td>2</td>
-			        <td>One</td>
-			        <td>English</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Clarissa</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Two</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -175,15 +90,13 @@
 			    <tbody>
 			       <tr>
 			        <td>3</td>
-			        <td>One</td>
-			        <td>Science</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Jacob</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Three</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -209,15 +122,13 @@
 			    <tbody>
 			       <tr>
 			        <td>4</td>
-			        <td>One</td>
-			        <td>Nepali</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Ram</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Four</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -243,15 +154,13 @@
 			    <tbody>
 			       <tr>
 			        <td>5</td>
-			        <td>One</td>
-			        <td>Computer</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Steve</td>
+			        <td>
+			        	<a href="" target="_blank">Five</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -277,15 +186,13 @@
 			    <tbody>
 			       <tr>
 			        <td>6</td>
-			        <td>One</td>
-			        <td>Social Studies</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Brenda</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Six</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -311,15 +218,13 @@
 			    <tbody>
 			       <tr>
 			        <td>7</td>
-			        <td>One</td>
-			        <td>Grammar</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Symond</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Seven</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -345,15 +250,77 @@
 			    <tbody>
 			       <tr>
 			        <td>8</td>
-			        <td>One</td>
-			        <td>G.K</td>
-			        <td>40</td>
-			        <td>100</td>
-			        <td>Paul</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Eight</a> 
+			        </td>    
 			        <td>
 			        	<div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
-                            	<span class="caret"></span>
+                                <span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <tbody>
+			       <tr>
+			        <td>9</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Nine</a> 
+			        </td>    
+			        <td>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                                <span class="caret"></span>
+                            </button>
+                                <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                <!-- EDITING LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                Edit          
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <!-- DELETION LINK -->
+                                    <li>
+                                        <a href="#" onclick="">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                Delete   
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+			        </td>
+			      </tr>
+			    </tbody>
+			    <tbody>
+			       <tr>
+			        <td>10</td>
+			        <td>
+			        	<a href="Student.html" target="_blank">Ten</a> 
+			        </td>    
+			        <td>
+			        	<div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action
+                                <span class="caret"></span>
                             </button>
                                 <ul class="dropdown-menu dropdown-default pull-right" role="menu">
                                 <!-- EDITING LINK -->
@@ -384,6 +351,4 @@
 
 	</div>
 	</div>
-	
 </section>
-<script src="js/Validation.js"></script>

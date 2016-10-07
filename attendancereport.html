@@ -1,0 +1,94 @@
+<section>
+	<div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    	<div class="sectionheader ">
+    		<img src="images/icons/hand.svg" >
+    		<h2>Attendance Report</h2>
+    	</div>
+    </div>
+    <div class="Class col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	    <div class="box-body library">
+	    	<form action="viewattendance.html"  target="_blank" method="post" accept-charset="utf-8">
+<div class="row">
+
+    
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="control-label" style="margin-bottom: 5px;">Class</label>
+                <select class="form-control selectboxit" name="class_id" onchange="select_section(this.value)">
+                    <option value="">Select Class</option>
+                                        <option value="1" >One</option>
+                                        <option value="2" >Two</option>
+                                        <option value="3" >Three</option>
+                                        <option value="4" >Four</option>
+                                        <option value="5" >Five</option>
+                                    </select>
+            </div>
+        </div>
+    
+
+    <div id="section_holder">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="control-label" style="margin-bottom: 5px;">Section</label>
+                <select class="form-control selectboxit" name="section_id">
+                    <option value="">Select Class First</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+         <div class="form-group">
+                <label class="control-label" style="margin-bottom: 5px;">Date</label>
+        <select name="month" class="form-control selectboxit" id="month" onchange="show_year()">
+                            <option value="1"
+                        >
+                            january                </option>
+                                <option value="2"
+                        >
+                            february                </option>
+                                <option value="3"
+                        >
+                            march                </option>
+                                <option value="4"
+                        >
+                            april                </option>
+                                <option value="5"
+                        >
+                            may                </option>
+                                <option value="6"
+                        >
+                            june                </option>
+                                <option value="7"
+                        >
+                            july                </option>
+                                <option value="8"
+                        >
+                            august                </option>
+                                <option value="9"
+                        >
+                            september                </option>
+                                <option value="10"
+                      selected  >
+                            october                </option>
+                                <option value="11"
+                        >
+                            november                </option>
+                                <option value="12"
+                        >
+                            december                </option>
+                        </select>
+         </div>
+    </div>
+    <input type="hidden" name="operation" value="selection">
+    <input type="hidden" name="year" value="2016-2017">
+
+	<div class="col-md-3" style="margin-top: 20px;">
+		<button type="submit" class="positionbox btn btn-primary btn-info">Show Report</button>
+	</div>
+</div>
+
+</form>
+	    </div>
+    </div>
+</section>

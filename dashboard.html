@@ -1,210 +1,360 @@
 <section id="Dashboard">
-      <div class="student col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="SAS col-lg-7 col-md-7 col-sm-12 col-sm-12">
-        <div class="attendance col-lg-5 col-md-5 col-sm-5 col-xs-5"><span>Student Attendance Summary</span></div>
-        <!-- select month -->
-        <select class="btn btn-mini">
-  <option value="" selected="selected">Select Month</option>
-                        <option value="A">Baisakh</option>
-                        <option value="B">Jestha</option>
-                        <option value="C">Ashar</option>
-                        <option value="D">Shrawan</option>
-                        <option value="E">Bhadra</option>
-                        <option value="F">Ashoj</option>
-                        <option value="G">Kartik</option>
-                        <option value="H">Mangsir</option>
-                        <option value="I">Poush</option>
-                        <option value="J">Magh</option>
-                        <option value="K">Falgun</option>
-                        <option value="L">Chaitra</option>
-</select>
-     <!--   select section --> 
-<select class="btn btn-mini">
-  <option value="" selected="selected">Select Section</option>
-                        <option value="A">Section A</option>
-                        <option value="B">Section B</option>
-</select>
- <!--  select class -->
-         <select class="btn btn-mini">
-  <option value="" selected="selected">Select Class</option>
-                        <option value="A">Class 10</option>
-                        <option value="B">Class 9</option>
-                        <option value="C">Class 8</option>
-                        <option value="D">Class 7</option>
-                        <option value="E">Class 6</option>
-                        <option value="F">Class 5</option>
-                        <option value="G">Class 4</option>
-                        <option value="H">Class 3</option>
-                        <option value="I">Class 2</option>
-                        <option value="J">Class 1</option>
-</select>
-
-
-      <!-- CHART -->
-        <canvas class="canvas" id="myChart"></canvas>     
+  <!-- Content Header (Page header)-->
+  <!-- Main content-->
+  <section class="content">
+    <!-- Info boxes-->
+    <div class="row">
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <div class="info-box"><span class="info-box-icon"><img src="images/icons/theater.svg"/></span>
+          <div class="info-box-content"><span class="info-box-number">1167</span><span class="info-box-text">Total students </span></div>
+          <!-- /.info-box-content-->
         </div>
-        <div class="Nboard col-lg-4 col-md-4 col-sm-12 col-sm-12">
-      <!-- notice board -->
-          <span>Notice Board</span>
-          <ul>
-            <li>Final Exam will be commencing from 15th of next month</li> 
-            <li>All fees must be cleared by the end of this month</li>
-          </ul>
+        <!-- /.info-box-->
+      </div>
+      <!-- /.col-->
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <div class="info-box"><span class="info-box-icon"><img src="images/icons/tie.svg"/></span>
+          <div class="info-box-content"><span class="info-box-number">114</span><span class="info-box-text">Total Teachers</span></div>
+          <!-- /.info-box-content-->
         </div>
-        <!-- Class routine -->
-        <div class="routines col-lg-7 col-md-7 col-sm-12 col-sm-12">
-          <span> Class Routines</span>
-
-          </select>
-<select class="btn btn-mini">
-  <option value="" selected="selected">Select Section</option>
-                        <option value="A">Section A</option>
-                        <option value="B">Section B</option>
-</select>
-          <select class="btn btn-mini">
-  <option value="" selected="selected">Select Class</option>
-                        <option value="A">Class 10</option>
-                        <option value="B">Class 9</option>
-                        <option value="C">Class 8</option>
-                        <option value="D">Class 7</option>
-                        <option value="E">Class 6</option>
-                        <option value="F">Class 5</option>
-                        <option value="G">Class 4</option>
-                        <option value="H">Class 3</option>
-                        <option value="I">Class 2</option>
-                        <option value="J">Class 1</option>
-</select>
- <!-- table -->
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Time</th>
-        <th>Subject</th>
-        <th>Teacher</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>10:00-10:40</td>
-        <td>Science</td>
-        <td>Pitt</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>10:40-11:20</td>
-        <td>English</td>
-        <td>Caroline</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>11:30-12:10</td>
-        <td>Math</td>
-        <td>Simon</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>12:10-12:40</td>
-        <td>Socialstudies</td>
-        <td>Jenny</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>1:10-1:50</td>
-        <td>Account</td>
-        <td>Joseph</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>1:50-2:30</td>
-        <td>Health</td>
-        <td>Jasmine</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>2:40-3:20</td>
-        <td>Computer</td>
-        <td>Ramon</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr>
-        <td>3:20-4:00</td>
-        <td>Nepali</td>
-        <td>Ram</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+        <!-- /.info-box-->
+      </div>
+      <!-- /.col-->
+      <!-- fix for small devices only-->
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <div class="info-box"><span class="info-box-icon"><img src="images/icons/calendar.svg"/></span>
+          <div class="info-box-content"><span class="info-box-number">08</span><span class="info-box-text">Events</span></div>
+          <!-- /.info-box-content-->
         </div>
-        <div class="c-events col-lg-4 col-md-4 col-sm-12 col-sm-12 ">
-          <span>Upcoming Events</span>
-          <ul>
-            <li>Farewell program for Grade 10 students</li>
-            <li>Tour After Exam for Grade 8,9,10.(Interested student talk to Class teacher)</li>
-          </ul>
+        <!-- /.info-box-->
+      </div>
+      <!-- /.col-->
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <div class="info-box"><span class="info-box-icon"><img src="images/icons/books.svg"/></span>
+          <div class="info-box-content"><span class="info-box-number">17824</span><span class="info-box-text">Books in library</span></div>
+          <!-- /.info-box-content-->
+        </div>
+        <!-- /.info-box-->
+      </div>
+      <!-- /.col-->
+      <div class="col-md-2 col-sm-4 col-xs-12">
+        <div class="info-box"><span class="info-box-icon"><img src="images/icons/chat.svg"/></span>
+          <div class="info-box-content"><span class="info-box-number">436782</span><span class="info-box-text">Total Sms Sent</span></div>
+          <!-- /.info-box-content-->
+        </div>
+        <!-- /.info-box-->
+      </div>
+      <!-- /.col-->
+    </div>
+    <!-- /.row-->
+  </section>
+  <div class="student col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="SAS col-lg-7 col-md-7 col-sm-12 col-sm-12">
+      <div class="attendance col-lg-5 col-md-5 col-sm-5 col-xs-5"><span>Student Attendance Summary</span></div>
+      <!-- select month-->
+      <select class="btn btn-mini">
+        <option value="" selected="selected">Select Month</option>
+        <option value="A">Baisakh</option>
+        <option value="B">Jestha</option>
+        <option value="C">Ashar</option>
+        <option value="D">Shrawan</option>
+        <option value="E">Bhadra</option>
+        <option value="F">Ashoj</option>
+        <option value="G">Kartik</option>
+        <option value="H">Mangsir</option>
+        <option value="I">Poush</option>
+        <option value="J">Magh</option>
+        <option value="K">Falgun</option>
+        <option value="L">Chaitra</option>
+      </select>
+      <!-- select section-->
+      <select class="btn btn-mini">
+        <option value="" selected="selected">Select Section</option>
+        <option value="A">Section A</option>
+        <option value="B">Section B</option>
+      </select>
+      <!-- select class-->
+      <select class="btn btn-mini">
+        <option value="" selected="selected">Select Class</option>
+        <option value="A">Class 10</option>
+        <option value="B">Class 9</option>
+        <option value="C">Class 8</option>
+        <option value="D">Class 7</option>
+        <option value="E">Class 6</option>
+        <option value="F">Class 5</option>
+        <option value="G">Class 4</option>
+        <option value="H">Class 3</option>
+        <option value="I">Class 2</option>
+        <option value="J">Class 1</option>
+      </select>
+      <!-- CHART-->
+      <canvas id="myChart" class="canvas"></canvas>
+    </div>
+    <div class="Nboard col-lg-4 col-md-4 col-sm-12 col-sm-12">
+      <!-- notice board-->
+      <div class="main">
+        <input id="tab1" type="radio" name="tabs" checked=""/>
+        <label for="tab1">Noticeboard</label>
+        <input id="tab2" type="radio" name="tabs"/>
+        <label for="tab2">Events</label>
+        <div class="tabcontent col-lg-12 col-md-12 col-sm-12 col-sm-12">
+          <div id="content1" class="stylelist">
+            <ul>
+              <li>Final Exam will be commencing from 15th of next month</li>
+              <li>All fees must be cleared by the end of this month</li>
+            </ul>
+          </div>
+          <div id="content2" class="stylelist">
+            <ul>
+              <li>Farewell program for Grade 10 students</li>
+              <li>Tour After Exam for Grade 8,9,10.(Interested student talk to Class teacher)</li>
+            </ul>
+          </div>
         </div>
       </div>
-</div>    
-       
-     </section>
-     <script type="text/javascript">
-       var lineChartData = {
-    labels: ["1", "2", "3", "4", "5", "6", "7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","24",],
-    datasets: [
-            {
-                label: "Present",
-                color:"rgba(135,215,249,0.5)",
-                fillColor: "rgba(135,215,249,0.8)",
-                strokeColor: "white",
-
-                data: [18, 16, 16, 16, 16, 18, 20, 21, 23, 25,27,29,32,35,37,38,39,40,41,38,35,33,30]
-            },
-            {
-                label: "Absent",
-                 color:"rgba(249,144,240,0.5)",
-                fillColor: "rgba(249,144,240,0.8)",
-                strokeColor: "white",
-                
-                data: [8, 18, 22, 26, 29, 33, 35, 35, 35, 33,31,30,29,28,27,26,27,28,29,30,32,33,36]
-            }
-        ]
-
-}
-
-Chart.defaults.global.animationSteps = 50;
-Chart.defaults.global.tooltipYPadding = 16;
-Chart.defaults.global.tooltipCornerRadius = 0;
-Chart.defaults.global.tooltipTitleFontStyle = "normal";
-Chart.defaults.global.tooltipFillColor = "rgba(0,160,0,0.8)";
-Chart.defaults.global.animationEasing = "easeOutBounce";
-Chart.defaults.global.responsive = true;
-Chart.defaults.global.scaleLineColor = "black";
-Chart.defaults.global.scaleFontSize = 16;
-
-var ctx = document.getElementById("myChart").getContext("2d");
-$(window).resize(function(){
-var LineChartDemo = new Chart(ctx).Line(lineChartData, {
-    responsive: true,
-    bezierCurve: false,
-    pointDotRadius: 0,
-    showLine: false,
-    scaleShowVerticalLines: false,
-    
-});
-});
-var LineChartDemo = new Chart(ctx).Line(lineChartData, {
-    responsive: true,
-    bezierCurve: false,
-    pointDotRadius: 0,
-    showLine: false,
-    scaleShowVerticalLines: false,
-    
-});
-     </script>
+    </div>
+    <!-- Class routine-->
+    <div class="routines col-lg-11 col-md-11 col-sm-12 col-xs-12"><span> Class Routines</span>
+      <select class="btn btn-mini">
+        <option value="" selected="selected">Select Section</option>
+        <option value="A">Section A</option>
+        <option value="B">Section B</option>
+      </select>
+      <select class="btn btn-mini">
+        <option value="" selected="selected">Select Class</option>
+        <option value="A">Class 10</option>
+        <option value="B">Class 9</option>
+        <option value="C">Class 8</option>
+        <option value="D">Class 7</option>
+        <option value="E">Class 6</option>
+        <option value="F">Class 5</option>
+        <option value="G">Class 4</option>
+        <option value="H">Class 3</option>
+        <option value="I">Class 2</option>
+        <option value="J">Class 1</option>
+      </select>
+      <!-- table-->
+      <div class="table-responsive">
+        <table id="routine-class" class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>10:15-11:00</th>
+              <td><img src="images/teacher.jpg" data-title="John Doe" class="teacher-profile"/>Math</td>
+              <td><img src="images/teacher.jpg" data-title="Jane" class="teacher-profile"/>Math</td>
+              <td><img src="images/teacher.jpg" data-title="Josheph" class="teacher-profile"/>Math</td>
+              <td><img src="images/teacher.jpg" data-title="John Doe" class="teacher-profile"/>Math</td>
+              <td><img src="images/teacher.jpg" data-title="John Doe" class="teacher-profile"/>Math</td>
+              <td><img src="images/teacher.jpg" data-title="John Doe" class="teacher-profile"/>Math</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>11:00-11:45</th>
+              <td><img src="images/teacher.jpg" data-title="Jacob" class="teacher-profile"/>English</td>
+              <td><img src="images/teacher.jpg" data-title="Jacob" class="teacher-profile"/>English</td>
+              <td><img src="images/teacher.jpg" data-title="Jacob" class="teacher-profile"/>English</td>
+              <td><img src="images/teacher.jpg" data-title="Jacob" class="teacher-profile"/>English</td>
+              <td><img src="images/teacher.jpg" data-title="Jacob" class="teacher-profile"/>English</td>
+              <td><img src="images/teacher.jpg" data-title="Jacob" class="teacher-profile"/>English</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>11:45-12:00</th>
+              <td>--break--</td>
+              <td>--break--</td>
+              <td>--break--</td>
+              <td>--break--</td>
+              <td>--break--</td>
+              <td>--break--</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>12:00-12:45</th>
+              <td><img src="images/teacher.jpg" data-title="Jyaendra" class="teacher-profile"/>Nepali</td>
+              <td><img src="images/teacher.jpg" data-title="Jyaendra" class="teacher-profile"/>Nepali</td>
+              <td><img src="images/teacher.jpg" data-title="Jyaendra" class="teacher-profile"/>Nepali</td>
+              <td><img src="images/teacher.jpg" data-title="Jyaendra" class="teacher-profile"/>Nepali</td>
+              <td><img src="images/teacher.jpg" data-title="Jyaendra" class="teacher-profile"/>Nepali</td>
+              <td><img src="images/teacher.jpg" data-title="Jyaendra" class="teacher-profile"/>Nepali</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>12:45-01:30</th>
+              <td><img src="images/teacher.jpg" data-title="Jerimiah" class="teacher-profile"/>Science</td>
+              <td><img src="images/teacher.jpg" data-title="Jerimiah" class="teacher-profile"/>Science</td>
+              <td><img src="images/teacher.jpg" data-title="Jerimiah" class="teacher-profile"/>Science</td>
+              <td><img src="images/teacher.jpg" data-title="Jerimiah" class="teacher-profile"/>Science</td>
+              <td><img src="images/teacher.jpg" data-title="Jerimiah" class="teacher-profile"/>Science</td>
+              <td><img src="images/teacher.jpg" data-title="Jerimiah" class="teacher-profile"/>Science</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>01:30-02:00</th>
+              <td>---tiffin break---</td>
+              <td>---tiffin break---</td>
+              <td>---tiffin break---</td>
+              <td>---tiffin break---</td>
+              <td>---tiffin break---</td>
+              <td>---tiffin break---</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>02:00-02:45</th>
+              <td><img src="images/teacher.jpg" data-title="Josephine" class="teacher-profile"/>HPE</td>
+              <td><img src="images/teacher.jpg" data-title="Josephine" class="teacher-profile"/>HPE</td>
+              <td><img src="images/teacher.jpg" data-title="Josephine" class="teacher-profile"/>HPE</td>
+              <td><img src="images/teacher.jpg" data-title="Josephine" class="teacher-profile"/>HPE</td>
+              <td><img src="images/teacher.jpg" data-title="Josephine" class="teacher-profile"/>HPE</td>
+              <td><img src="images/teacher.jpg" data-title="Josephine" class="teacher-profile"/>HPE</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>02:45-03:30</th>
+              <td><img src="images/teacher.jpg" data-title="Jack" class="teacher-profile"/>Social studies</td>
+              <td><img src="images/teacher.jpg" data-title="Jack" class="teacher-profile"/>Social studies</td>
+              <td><img src="images/teacher.jpg" data-title="Jack" class="teacher-profile"/>Social studies</td>
+              <td><img src="images/teacher.jpg" data-title="Jack" class="teacher-profile"/>Social studies</td>
+              <td><img src="images/teacher.jpg" data-title="Jack" class="teacher-profile"/>Social studies</td>
+              <td><img src="images/teacher.jpg" data-title="Jack" class="teacher-profile"/>Social studies</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th>03:30-04:15</th>
+              <td><img src="images/teacher.jpg" data-title="Jerry" class="teacher-profile"/>Account</td>
+              <td><img src="images/teacher.jpg" data-title="Jerry" class="teacher-profile"/>Account</td>
+              <td><img src="images/teacher.jpg" data-title="Jerry" class="teacher-profile"/>Account</td>
+              <td><img src="images/teacher.jpg" data-title="Jerry" class="teacher-profile"/>Account</td>
+              <td><img src="images/teacher.jpg" data-title="Jerry" class="teacher-profile"/>Account</td>
+              <td><img src="images/teacher.jpg" data-title="Jerry" class="teacher-profile"/>Account</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" data-toggle="modal" data-target="#Calendar" class="schoolcalendar btn btn-primary btn-md"><img src="images/icons/calendar.svg"/></button>
+      <div id="Calendar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+              <h4 id="myModalLabel" class="modal-title">School Calendar</h4>
+            </div>
+            <div style="width:100%; max-width:600px; display:inline-block;">
+              <div id="eventcalendar" class="monthly"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  var lineChartData = {
+  labels: ["1", "2", "3", "4", "5", "6", "7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","24","25","26","27","28","29","30"],
+  datasets: [
+  {
+  label: "Present",
+  color:"rgba(135,215,249,0.5)",
+  fillColor: "rgba(135,215,249,0.8)",
+  strokeColor: "white",
+  data: [18, 16, 16, 16, 16, 18, 20, 21, 23, 25,27,29,32,35,37,38,39,40,41,38,35,33,30,28,27,26,25,24,23]
+  },
+  {
+  label: "Absent",
+  color:"rgba(249,144,240,0.5)",
+  fillColor: "rgba(249,144,240,0.8)",
+  strokeColor: "white",
+  data: [8, 18, 22, 26, 29, 33, 35, 35, 35, 33,31,30,29,28,27,26,27,28,29,30,32,33,36,38,39,40,41,42,43]
+  }
+  ]
+  }
+  Chart.defaults.global.animationSteps = 50;
+  Chart.defaults.global.tooltipYPadding = 16;
+  Chart.defaults.global.tooltipCornerRadius = 0;
+  Chart.defaults.global.tooltipTitleFontStyle = "normal";
+  Chart.defaults.global.tooltipFillColor = "rgba(0,160,0,0.8)";
+  Chart.defaults.global.animationEasing = "easeOutBounce";
+  Chart.defaults.global.responsive = true;
+  Chart.defaults.global.scaleLineColor = "black";
+  Chart.defaults.global.scaleFontSize = 16;
+  var ctx = document.getElementById("myChart").getContext("2d");
+  $(window).resize(function(){
+  var LineChartDemo = new Chart(ctx).Line(lineChartData, {
+  responsive: true,
+  bezierCurve: false,
+  pointDotRadius: 0,
+  showLine: false,
+  scaleShowVerticalLines: false,
+  });
+  });
+  var LineChartDemo = new Chart(ctx).Line(lineChartData, {
+  responsive: true,
+  bezierCurve: false,
+  pointDotRadius: 0,
+  showLine: false,
+  scaleShowVerticalLines: false,
+  });
+</script>
+<script>
+  //adding bacckground on routine according to current date
+  $(function(){
+  var curdate = new Date(),
+  rowCount = $('#routine-class').find('tbody').length,
+  index = 0,
+  headers = $('#routine-class').find('th').not(':first-child'),
+  tableValue;
+  curdate += "";
+  headers.each(function(i){
+  if(curdate.substr(0,3) == headers.eq(i).text()){
+  index = i;
+  for(var j=0;j<rowCount;j++){
+  $('#routine-class').find('tbody').eq(j).find('td').eq(i).css({
+  "background": "#d9e4de"
+  });
+  }
+  $('#routine-class').find('thead').find('th').not(':first-child').eq(i).css({
+  "background": "#d9e4de",
+  "border": "none"
+  });
+  }
+  });
+  });
+</script>
+<script type="text/javascript" src="js/monthly.js"></script>
+<script type="text/javascript">
+  $('.schoolcalendar').one('click', function(e) {
+  e.preventDefault();
+  $('#eventcalendar').monthly({
+  mode: 'event',
+  //jsonUrl: 'events.json',
+  //dataType: 'json'
+  xmlUrl: 'events.xml'
+  });
+  switch(window.location.protocol) {
+  case 'http:':
+  case 'https:':
+  // running on a server, should be good.
+  break;
+  case 'file:':
+  alert('Just a heads-up, events will not work when run locally.');
+  }
+  });
+</script>
