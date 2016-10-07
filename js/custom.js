@@ -2,7 +2,7 @@
 $(document).ready(function() {
 //page content loader
     $('#content').load('dashboard.html');
-    $('#nav .sidebar ul li a').click(function(e){  
+    $('#nav .sidebar ul li').not('.treeview').find('a').click(function(e){  
         e.preventDefault();      
         var url = $(this).attr('href');
             $.ajax({
@@ -19,7 +19,7 @@ $(document).ready(function() {
             }
      });
 });
-    $('#nav .sidebar ul li a ul li a').click(function(e){  
+    $('#nav .sidebar ul li.admin').click(function(e){  
         e.preventDefault();      
         var url = $(this).attr('href');
             $.ajax({
@@ -36,6 +36,17 @@ $(document).ready(function() {
             }
      });
 });
+
+    //image tooltip
+    var title = '';
+    $('body').on('mouseenter','.teacher-profile',function(){
+        title = $(this).data('title');
+        if($(this).parent().find('span').length == 0){
+            $(this).before('<span>'+title+'</span>');
+        }
+        
+    });
+
 });    
 //validation 
 
